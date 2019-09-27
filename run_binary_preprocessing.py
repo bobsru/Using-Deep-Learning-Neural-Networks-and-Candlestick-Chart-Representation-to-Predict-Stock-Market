@@ -23,7 +23,7 @@ windows_length = sys.argv[2]
 dimension = sys.argv[3]
 
 # turn off if you have offline data
-download_data = True
+download_data = False
 
 # training - testing flag data generation
 onlytesting = True

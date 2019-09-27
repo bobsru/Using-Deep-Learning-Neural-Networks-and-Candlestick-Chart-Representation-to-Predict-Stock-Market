@@ -2,7 +2,7 @@ import sys
 import os
 from collections import defaultdict
 import numpy as np
-import scipy.misc
+import cv2
 
 
 def dataset(base_dir, n):
@@ -29,7 +29,7 @@ def dataset(base_dir, n):
         filenames = d[class_name]
         for filename in filenames:
             processed_image_count += 1
-            img = scipy.misc.imread(filename)
+            img = cv2.imread(filename)
             height, width, chan = img.shape
             assert chan == 3
             X.append(img)

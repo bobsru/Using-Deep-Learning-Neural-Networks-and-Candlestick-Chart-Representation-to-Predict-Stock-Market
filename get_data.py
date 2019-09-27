@@ -22,7 +22,7 @@ import pandas as pd
 import datetime as dt
 from pandas_datareader import data, wb
 import os
-import fix_yahoo_finance as yf
+import yfinance as yf
 import time
 # fixed pandas_datareader can't download from yahoo finance
 yf.pdr_override()
